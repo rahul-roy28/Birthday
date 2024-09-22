@@ -1,70 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>My Website</title>
-        <link
-        rel="stylesheet"
-        href="./style.css"
-        />
-        <style>
-            body{
-
-                display: flex;
-                justify-content: center;
-                height: 100vh;
-                align-items: center;
-            }
-            .card-container{
-               perspective: 1000px;
-                height: 200px;
-                width: 300px;
-                
-            }
-            .card{
-                height: 100%;
-                width: 100%;
-                transform-style: preserve-3d;
-                transition: transform 0.5s;
-             
-            }
-           
-            
-            .card:hover{
-                transform: rotateY(180deg);
-            }
-            .card-frame{
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                align-items: center;
-            }
-            .card-front{
-                background-color: rgb(15, 168, 239);
-                color:white;
-                transform: rotateY(180deg);
-
-            }
-            .card-back{
-                background-color: pink;
-                color:rgba(89, 0, 255, 0.879);
-                backface-visibility: hidden;
-
-            }
-            
-        </style>
-    </head>
-    <body>
-        <div class="card-container">
-            <div class="card">
-                <div class="card-frame card-front">I love You</div>
-                <div class="card-frame card-back">Puja This is for You</div>
-
-            </div>
-
-        </div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Happy Birthday, Bestie!</h1>
+      <button id="revealButton">Click for a Surprise!</button>
+      <p id="birthdayWish" class="hidden">
+        🎉 Wishing you a day filled with love, laughter, and unforgettable
+        memories! 🎂 You are the best friend anyone could ask for. Have an
+        amazing birthday! 🎁🎈
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
