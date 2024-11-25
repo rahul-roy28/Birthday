@@ -1,0 +1,436 @@
+/* styles.css */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Great Vibes", cursive;
+  background-color: #ffe6e6; /* Romantic light pink */
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.message-container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.message-container h1 {
+  font-size: 3em;
+  color: #ff6699;
+}
+
+.message-container p {
+  font-size: 1.5em;
+  color: #ff3366;
+}
+
+/* styles.css */
+.parallax-section {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("path-to-your-background-image.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* styles.css */
+body {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* styles.css */
+.card-container {
+  perspective: 1000px;
+  width: 300px;
+  margin: 0 auto 50px;
+}
+
+.card {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  /* transition: transform 1s; */
+  cursor: pointer;
+  transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.card-front,
+.card-inside {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-front {
+  background-color: #ff99cc;
+}
+
+.card-inside {
+  background-color: #fbc9c9;
+  color: #ff3366;
+  transform: rotateY(180deg);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card.opened {
+  transform: rotateY(180deg);
+}
+
+/* styles.css */
+.slideshow-container {
+  position: relative;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.slide {
+  display: none;
+  position: relative;
+}
+
+.anime-cartoon {
+  width: 100%;
+  height: 300px;
+  background-color: #ffe6ff; /* Placeholder for cartoon */
+  border-radius: 10px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: #ff6699;
+  font-weight: bold;
+  font-size: 24px;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* Fade animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* styles.css */
+/* Card flip animation */
+.card {
+  transition: transform 0.8s;
+}
+
+/* Button hover effects */
+button#submit {
+  transition: background-color 0.3s;
+}
+
+/* styles.css */
+.quiz-container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: left;
+}
+
+.quiz-container h2 {
+  text-align: center;
+  color: #ff3366;
+}
+
+#quiz {
+  margin-bottom: 20px;
+}
+
+.question {
+  font-weight: bold;
+}
+
+.answers {
+  margin-bottom: 20px;
+}
+
+button#submit {
+  background-color: #ff6699;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button#submit:hover {
+  background-color: #ff3366;
+}
+
+#results {
+  font-size: 1.2em;
+  color: #ff3366;
+  text-align: center;
+}
+/* styles.css */
+@media (max-width: 600px) {
+  .message-container h1 {
+    font-size: 2em;
+  }
+
+  .card-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .slideshow-container,
+  .quiz-container {
+    width: 90%;
+  }
+
+  .anime-character {
+    width: 150px;
+    height: 225px;
+  }
+}
+/* styles.css */
+/* .hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.heart {
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ff0000;
+  opacity: 0.7;
+  transform: rotate(-45deg);
+  animation: floatUp 10s infinite;
+}
+
+.heart::after,
+.heart::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ff0000;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  left: 10px;
+  top: 0;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateX(0) translateY(0) rotate(-45deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateX(-100px) translateY(-800px) rotate(-45deg);
+    opacity: 0;
+  }
+} */
+
+/* styles.css */
+
+/* Existing styles for hearts */
+
+.hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.heart {
+  position: absolute;
+  bottom: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #ff0000;
+  opacity: 0.7;
+  transform: rotate(-45deg);
+  animation: floatUp 10s infinite;
+  will-change: transform, opacity;
+}
+
+.heart::after,
+.heart::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ff0000;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  left: 10px;
+  top: 0;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(-45deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(-45deg);
+    opacity: 0;
+  }
+}
+
+/* Balloons */
+.balloon {
+  position: absolute;
+  bottom: -100px;
+  width: 40px;
+  height: 60px;
+  background-color: red;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  opacity: 0.8;
+  animation: floatUpBalloon 12s infinite;
+  will-change: transform, opacity;
+  box-shadow: inset -2px -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.balloon::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  width: 2px;
+  height: 20px;
+  background-color: #aaa;
+  transform: translateX(-50%);
+}
+
+@keyframes floatUpBalloon {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
+
+/* styles.css */
+button#submit {
+  background-color: #ff6699;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button#submit:hover {
+  background-color: #ff3366;
+}
+/* styles.css */
+.card-front h2 {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* styles.css */
+.prev:hover,
+.next:hover {
+  color: #ff3366;
+  transform: scale(1.2);
+  transition: transform 0.2s;
+}
+/* styles.css */
+/* styles.css */
+
+#fireworksCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allow clicks to pass through */
+  z-index: -2; /* Place it behind other elements */
+}
